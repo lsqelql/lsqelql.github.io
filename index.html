@@ -93,7 +93,10 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>hello I’m lsqe</p>
+        <p>hello I’m lsqe<br>一个JVM是一个进程<br>进程：一个在内存中运行的应用程序。每个进程都有自己独立的一块内存空间，一个进程可以有多个线程，比如在Windows系统中，一个运行的xx.exe就是一个进程。<br>线程：进程中的一个执行任务（控制单元、执行单元），负责当前进程中程序的执行。一个进程至少有一个线程，一个进程可以运行多个线程，多个线程可共享数据。<br>在JAVA中：一个进程下的线程A与线程B之间，堆内存和方法区内存共享，但是栈内存独立，一个线程就对应一个栈。</p>
+<p>Student s1 &#x3D; new Student(“1”, “xiaoli”);<br>Student s2 &#x3D; new Student(“1”, “xiaoli”);<br>TreeSet<Student> treeSet &#x3D; new TreeSet&lt;&gt;();<br>treeSet.add(s1);<br>treeSet.add(s2);</p>
+<p>3.使用了多线程机制后，main方法结束，程序&#x2F;进程可能也不会结束，main方法结束只是主线程结束了，主栈空了，其他的栈（线程）可能还在压栈弹栈</p>
+<p>4.对于单核cpu来说，能否做到真正的多线程并发</p>
 
       
     </div>
